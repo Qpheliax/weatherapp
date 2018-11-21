@@ -1,0 +1,36 @@
+<div class="container">
+
+  <div class="row justify-content-center">
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search city..." ng-model="assetName" ng-change="searchWeather()" aria-label="Search term" aria-describedby="basic-addon">
+      <div class="input-group-append">
+        <button class="btn" type="button" ng-click="searchWeather()"><i class="material-icons">search</i></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="back" ng-show="assetName">
+    <div class="row h-100 justify-content-center">
+      <a href="#!home">
+        <p><i class="material-icons">arrow_back</i>Back</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="box" ng-show="assetName">
+    <div class="row h-100 justify-content-center">
+      <span>{{json.name}}</span>
+    </div>
+
+    <div class="row h-100 justify-content-center">
+      <span> {{temp | number : 0}} &#8451;</span>
+    </div>
+
+    <div class="row h-100 justify-content-center">
+      <img ng-src="http://openweathermap.org/img/w/{{json.weather[0].icon}}.png" />
+    </div>
+
+  </div>
+</div>

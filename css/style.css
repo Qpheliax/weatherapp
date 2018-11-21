@@ -1,0 +1,146 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.stars, .twinkling {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  z-index: -2;
+  background: #000 url("../img/stars.png") repeat top center;
+}
+
+.twinkling {
+  z-index: -1;
+  background: transparent url("../img/twinkling.png") repeat top center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+/* header ↓↓↓ */
+
+.d-flex img {
+  width: 19vw;
+  height: 19vw;
+}
+
+.home {
+  color: #bb5e52;
+  padding-top: 5px;
+  padding-right: 5px;
+  font-size: 10vw;
+}
+
+.date p {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  font-size: 6vw;
+  color: #fff;
+}
+
+/* main ↓↓↓ */
+
+.mainbutton {
+  position: relative;
+  background: transparent;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 2px solid #bb5e52;
+  display: inline-block;
+  width: 50vw;
+  height: 30vw;
+  margin: 5px;
+}
+
+.mainbutton span {
+  position: "absolute";
+  top: "50%";
+  left: "50%";
+  transform: "translate(-50%, -50%)";
+  text-decoration: none;
+  padding: 0px;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+}
+
+.mainbutton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e0e0e0));
+  background: -moz-linear-gradient(top, #ffffff 5%, #e0e0e0 100%);
+  background: -webkit-linear-gradient(top, #ffffff 5%, #e0e0e0 100%);
+  background: -o-linear-gradient(top, #ffffff 5%, #e0e0e0 100%);
+  background: -ms-linear-gradient(top, #ffffff 5%, #e0e0e0 100%);
+  background: linear-gradient(to bottom, #ffffff 5%, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0);
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.mainbutton:hover span {
+  color: #000;
+}
+
+.mainbutton:active {
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+
+/* weather box ↓↓↓ */
+
+.row span {
+  padding: 0px;
+  font-size: 8vw;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+}
+
+.box {
+  background-color: #527abb;
+}
+
+.back {
+  background-color: #52bb93;
+}
+
+.back p, .back i, .back a, .back a:hover {
+  margin: 0;
+  padding: 3px;
+  color: #000;
+  font-size: 6vw;
+  text-decoration: none;
+}
+
+/* searchbox ↓↓↓ */
+
+.input-group {
+  margin: 15px;
+}
+
+.btn i {
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #bb5e52;
+}

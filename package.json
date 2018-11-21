@@ -1,0 +1,10 @@
+{
+    "name": "weatherApp",
+    "version": "0.0.2",
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "icon": "img/cosmos.png"
+    },
+    "dependencies": {}
+}
