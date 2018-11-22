@@ -68,8 +68,8 @@ html, body {
   border-radius: 28px;
   border: 2px solid #bb5e52;
   display: inline-block;
-  width: 50vw;
-  height: 30vw;
+  width: 10em;
+  height: 5em;
   margin: 5px;
 }
 
@@ -110,7 +110,7 @@ html, body {
 
 .row span {
   padding: 0px;
-  font-size: 8vw;
+  font-size: 1.5em;
   font-family: 'Quicksand', sans-serif;
   color: #fff;
 }
@@ -127,7 +127,7 @@ html, body {
   margin: 0;
   padding: 3px;
   color: #000;
-  font-size: 6vw;
+  font-size: 1.1em;
   text-decoration: none;
 }
 
