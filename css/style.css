@@ -144,3 +144,30 @@ html, body {
 .btn {
   background-color: #bb5e52;
 }
+
+/* for 1920x +++ ↓↓↓ */
+
+@media only screen and (min-width: 1366px) {
+
+  .date p {
+    font-size: 4em;
+  }
+  .d-flex img {
+    width: 5em;
+    height: 5em;
+  }
+  .home {
+    font-size: 5em;
+  }
+  .mainbutton {
+    width: 15em;
+    height: 10em;
+  }
+  .row span {
+    font-size: 2em;
+  }
+  .back p, .back a, .back a:hover {
+    font-size: 2em;
+  }
+
+}
