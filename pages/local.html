@@ -10,6 +10,11 @@
 
   <div class="box">
     <div class="row h-100 justify-content-center">
+      <p>Your location :</p>
+    </div>
+
+  <div class="box">
+    <div class="row h-100 justify-content-center">
       <span>{{json.name}}</span>
     </div>
 
@@ -17,8 +22,18 @@
       <span> {{temp | number : 0}} &#8451;</span>
     </div>
 
+
+
     <div class="row h-100 justify-content-center">
       <img ng-src="http://openweathermap.org/img/w/{{json.weather[0].icon}}.png" />
+    </div>
+
+    <div class="row small h-100 justify-content-center">
+      <span> Humidity: {{json.main.humidity}} % </span>
+    </div>
+
+    <div class="row small h-100 justify-content-center">
+      <span>Wind speed: {{json.wind.speed}}  m/s </span>
     </div>
 
   </div>

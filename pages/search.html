@@ -11,7 +11,7 @@
 
   </div>
 
-  <div class="back" ng-show="assetName">
+  <div class="back">
     <div class="row h-100 justify-content-center">
       <a href="#!home">
         <p><i class="material-icons">arrow_back</i>Back</p>
@@ -30,6 +30,14 @@
 
     <div class="row h-100 justify-content-center">
       <img ng-src="http://openweathermap.org/img/w/{{json.weather[0].icon}}.png" />
+    </div>
+
+    <div class="row small h-100 justify-content-center">
+      <span> Humidity: {{json.main.humidity}} % </span>
+    </div>
+
+    <div class="row small h-100 justify-content-center">
+      <span>Wind speed: {{json.wind.speed}}  m/s </span>
     </div>
 
   </div>
