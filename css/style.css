@@ -48,6 +48,14 @@ html, body {
   padding-right: 5px;
   font-size: 10vw;
 }
+.home:active {
+ font-size: 11vw;
+ text-shadow:
+   -1px -1px 0 #696969,
+    1px -1px 0 #696969,
+    -1px 1px 0 #696969,
+     1px 1px 0 #696969;
+}
 
 .date p {
   margin: 0;
@@ -68,8 +76,8 @@ html, body {
   border-radius: 28px;
   border: 2px solid #bb5e52;
   display: inline-block;
-  width: 50vw;
-  height: 30vw;
+  width: 10em;
+  height: 5em;
   margin: 5px;
 }
 
@@ -79,7 +87,7 @@ html, body {
   left: "50%";
   transform: "translate(-50%, -50%)";
   text-decoration: none;
-  padding: 0px;
+  margin: 0;
   font-family: 'Quicksand', sans-serif;
   color: #fff;
 }
@@ -110,25 +118,49 @@ html, body {
 
 .row span {
   padding: 0px;
-  font-size: 8vw;
+  font-size: 1.7em;
   font-family: 'Quicksand', sans-serif;
   color: #fff;
+}
+.small span {
+  font-size: 1.4em;
 }
 
 .box {
   background-color: #527abb;
+  border-radius: 10px;
+  padding:8px;
+}
+.box p {
+  margin:0;
+  padding: 0;
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+  color: #000;
 }
 
 .back {
   background-color: #52bb93;
+  border-radius: 10px;
+  text-align: center;
+}
+.back:hover {
+  background-color: #27654d;
+}
+.back:active {
+  background-color: #27654d;
 }
 
+.back p, .back i, .back a, .back a:hover
+{margin: 0;}
+
 .back p, .back i, .back a, .back a:hover {
-  margin: 0;
   padding: 3px;
   color: #000;
-  font-size: 6vw;
+  font-size: 1.1em;
   text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* searchbox ↓↓↓ */
@@ -166,7 +198,11 @@ html, body {
   .row span {
     font-size: 2em;
   }
-  .back p, .back a, .back a:hover {
+  .back p {
+    font-size: 1em;
+  }
+
+  .back a, .back a:hover {
     font-size: 2em;
   }
 
